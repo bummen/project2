@@ -2,10 +2,11 @@
 # http://www.sthda.com/english/wiki/ggplot2-scatter-plots-quick-start-guide-r-software-and-data-visualization
 
 # Install all relevant packages and establish useful functions
-install.packages("beepr") # for playing sounds
-install.packages("rpart.plot") # for nice tree plots
-install.packages("rpart") # for building recursive trees
+# install.packages("beepr") # for playing sounds
+# install.packages("rpart.plot") # for nice tree plots
+# install.packages("rpart") # for building recursive trees
 require("rpart") 
+require("rpart.plot")
 require("caret")
 require("beepr")
 require("Hmisc")
@@ -21,7 +22,7 @@ chart.Correlation(as.matrix(survey[, sapply(survey, is.numeric)]), histogram=TRU
 # There's definitely something going on between salary and brand.
 # Data in general looks so unnatural, it's hard to believe our firm paid money to that market research agency.
 
-## Another way of looking at correlation 
+## Another way of looking at correlation
 # Show correlation between variables
 # corrMat2 <- rcorr(as.matrix(survey[, sapply(survey, is.numeric)]))
 # corrMat2
