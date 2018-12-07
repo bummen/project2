@@ -27,7 +27,6 @@ chart.Correlation(as.matrix(survey[, sapply(survey, is.numeric)]), histogram=TRU
 # corrMat2 <- rcorr(as.matrix(survey[, sapply(survey, is.numeric)]))
 # corrMat2
 # corrplot(corrMat2$r)
-# We observe no correlation whatsoever between variables.
 
 # Inspect & Transform data types, look for missing values
 anyNA(survey) # Any missing values? No, in this case.
